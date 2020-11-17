@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-size: 1em; */
+}
+:root{
+    /* --ok-color:#007bff;
+    --ok-button-color:#7f9fc073;
+    --cancel-color:#343a40;
+    --text-color:#ffffff;
+    --shaders-color:#9fa8b1;
+    --logo-strong-color:black; */
+    /* new colors*/
+    --header-back-color:#42413df5;
+    --black-copy-header-color:#202020dc;
+    --section-back-color:#a7a397;
+    --header-text-strong:#f7f5ee;
+    --main-h2-text-color:#FFCE2B;
+}
+#header{
+    background-color: var(--header-back-color);
+    text-align: center;
+}
+#header h1 strong{
+    color:var(--main-h2-text-color);
+}
+/* -------------------span */
+#header span strong{
+    color:var(--header-text-strong);
+}
+
+#page-name{
+    margin:0;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------main section */
+    /* .section-cards{
+        display:flex;
+    } */
+
+/* slide */
+
+.slide-img-items{
+    /* display: none; */
+    vertical-align: middle;
+    
+}
+
+
+.cards{
+    /* cards en general */
+    display: flex;
+    overflow-y: hidden; 
+    overflow-x: auto;
+    margin:5px;
+    
+    
+}
+.card{
+    /* separacion entre cards */
+    /* cada una de las cards */
+    margin: 0 5px 10px 5px;
+}
+
+.button-margin{
+    margin: 0 0 5px 0;
+}
+
+/* ----------------------------- setion h2 en adelante */
+.sub-tittle-color{
+    background-color: var(--black-copy-header-color);
+}
+.sub-tittle-color h2{
+    margin: 0;
+    color:var(--main-h2-text-color);
+}
+
+
+
+
+/* -------------------contacto section */
+.contacto-body{
+    background-color: var(--section-back-color);
+}
+
+
+.contacto-body h3{
+    margin: 0;
+    color: var(--header-text-strong);
+}
+
+
+/* contact icon social  */
+.contacto-icons-container{
+    /* display:flex; */
+    /* justify-content: space-around; */
+    margin: 0 auto;
+    /* padding:10px; */
+}
+.contact-icon-size{
+    max-width: 25px;
+    max-height: 35px;
+    /* margin-left: 5px; */
+    display: flex;
+}
+
+
+.figure-display-change{
+    display:flex;
+    justify-content: center;
+    margin: 15px 0 0 0;
+}
+
+
+
+/*----------------- fooooooter section */
+footer div h6{
+    display:inline-block;
+    cursor: pointer;
+}
+footer span{
+    background-image: url(./img/icons/drop-down-icon.png);
+    display: flex;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    
+}
+
+
