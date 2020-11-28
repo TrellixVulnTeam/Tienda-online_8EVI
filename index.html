@@ -10,15 +10,28 @@
   </head>
   <body>
 
-    <header class="w3-container main-header w3-cell-row" id="header">
+    <header class="w3-container main-header w3-cell-row header-background-color" id="header">
 
-        <h1 class="w3-pale" id="page-name" ><strong> Me lo llevo!</strong></h1>
-        <span class="sub-title" > <strong>Tu tienda online</strong></span>
+        
+          <h1 class="w3-pale w3-wide" id="page-name" ><strong> Nora's</strong></h1>
+          <span class="sub-title" > <strong>Tu tienda online</strong></span>
+      
+
+        <hr class="header-linea-separadora">
+
+        <div class=" header-contacto-div">
+          <div class="logo">  <strong class="w3-border-bottom" >Nora Esthela Solano.</strong> <br>Propietaria </div>
+          <div class="w3-center centrar-numero">
+            <span class="celular-text-color " > <a href="#"><img class="contact-icon-size-wsp" src="./img/icons/wsp-icon-large.png"  alt="" srcset="">
+              0979313827</a></span>
+          
+          </div>
+        </div>
         
     </header>
-    <section class="w3-content w3-row">
+    <section class=" slider-height"  >
       <!-- slideshow -->
-        <img src="./img/jpegs/bowls/bow-blanco-dorado-fron.jpg" class="slide-img-items" style="width: 100%;" alt="" srcset="">
+        <img src="./img/icons/face-icon.png" class="slide-img-items" style="width: 100%;" alt="" srcset="">
         <img src="./img/jpegs/tarros/img-jpgs/tarro-azucar-celeste-blanco.jpg" class="slide-img-items" style="width: 100%;" alt="" srcset="">
         <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" class="slide-img-items" style="width: 100%;" alt="" srcset=""> 
         <button class="w3-button w3-display-right" onclick="">&#10095;</button>
@@ -28,8 +41,8 @@
     <main class="">
 
 
-      <div class="productos-tupper-h2 w3-center sub-tittle-color">
-        <h2>Tupperware</h2>
+      <div class="productos-tupper-h2  sub-tittle-color">
+        <h2 class="w3-center">Tupperware</h2>
       </div>
       <section class="section-cards" >
         <!-- items-cards -->
@@ -51,7 +64,7 @@
               </div>
                   <div class="w3-row buttons">
                     <button class="w3-button w3-grey w3-round-small w3-tiny w3-center w3-half button-margin">Ver más detalles...</button>
-                    <button class="w3-button w3-dark-grey w3-hover-orange w3-round-small  w3-tiny w3-center w3-half button-margin"><span>Comprar vía whatsapp</span><img src="img/icons/wsp-icon.png" style="width: 25px; height: auto;" alt="" srcset=""></button>
+                    <button id="comprar" onclick="comprar()" class="w3-button w3-dark-grey w3-hover-orange w3-round-small  w3-tiny w3-center w3-half button-margin"><span>Comprar vía whatsapp</span><img src="img/icons/wsp-icon.png" style="width: 25px; height: auto;" alt="" srcset=""></button>
                   </div>
           </div>  
         </div>  
@@ -119,34 +132,34 @@
       </section>
 
       <!-- -------------------hinode section -->
-      <div class="productos-tupper-h2 w3-center sub-tittle-color">
-        <h2>Hinode</h2>
+      <div class="productos-tupper-h2  sub-tittle-color">
+        <h2 class="w3-center" >Hinode</h2>
       </div>
       
-      <section class=" section-cards" >
+      <section class=" section-cards cards w3-border w3-border-red " >
         <!-- items-cards -->
 
-        <div class="cards  ">
+        
 <!-- primera tarjeta           -->
-          <div class="w3-card-2 card">
-            <div class="img-card-item">
+          <div class="w3-card-2 card w3-border w3-border-blue ">
+            <div class="img-card-item card">
               <img src="img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" style="width: 100%;" alt="" srcset="">
             </div>
-            
+<!--             
             <div class="item-card-details">
               
                 <p>Tarro Tupperware|Diseño Calaveras </p>
               
-              <div class="w3-container">
-                <span class="">Capacidad: 2lts.</span><br>
-                <span class="">Tamaño: 30cm altos x 50cm radio.</span>
-              </div>
+                  <div class="w3-container">
+                    <span class="">Capacidad: 2lts.</span><br>
+                    <span class="">Tamaño: 30cm altos x 50cm radio.</span>
+                  </div>
                   <div class="w3-row buttons">
                     <button class="w3-button w3-grey w3-round-small w3-tiny w3-center w3-half button-margin">Ver más detalles...</button>
                     <button class="w3-button w3-dark-grey w3-hover-orange w3-round-small  w3-tiny w3-center w3-half button-margin"><span>Comprar vía whatsapp</span><img src="img/icons/wsp-icon.png" style="width: 25px; height: auto;" alt="" srcset=""></button>
-                  </div>
-          </div>  
-        </div>  
+                  </div> -->
+                  <!-- </div>   -->
+           
 <!-- segunda tarjeta         -->
           <div class="w3-card-2 card">
             <div class="img-card-item">
@@ -219,25 +232,24 @@
         <div class="w3-container">
           <h3>Nuestras redes sociales:</h3>
         </div>
-        <div class="contacto-icons-container ">
-          <a href="#">
-            <figure class="w3-center figure-display-change">
-              <img class="contact-icon-size w3-border w3-border-red" src="./img/icons/face-icon.png" alt="facebook logo" srcset="">
-              <figcaption>La tiendita</figcaption>
+        <div class="contacto-icons-container " style="display: flex; justify-content: space-around;" >
+         <div class="facebook" >
+          <a  href="#">
+            <figure class="w3-center figure-display-change" style="margin: 0;">
+              <img class="contact-icon-size" src="./img/icons/face-icon.png" alt="facebook logo" srcset="">
+              <figcaption style="text-decoration: none;" >La tiendita</figcaption>
             </figure>
           </a>
-          <a class="" href="#">
-            <figure class="w3-center figure-display-change" >
-              <img class="contact-icon-size " src="./img/icons/insta-color-icon.png"alt="instagram logo" srcset="">
-              <figcaption>@La tiendita</figcaption>
-            </figure>
-          </a>
-          <a class="" href="#">
-            <figure class="w3-center figure-display-change" >
-              <img class="contact-icon-size" src="./img/icons/wsp-icon-large.png"  alt="" srcset="">
-              <figcaption>0989667005</figcaption>
-            </figure>
-          </a>
+         </div>
+          <div class="instagram">
+            <a href="#">
+              <figure class="w3-center figure-display-change" style="margin: 0;" >
+                <img class="contact-icon-size" src="./img/icons/insta-color-icon.png"alt="instagram logo" srcset="">
+                <figcaption style="text-decoration: none;" >@La tiendita</figcaption>
+              </figure>
+            </a>
+          </div>
+          
 
         </div>
       </div>

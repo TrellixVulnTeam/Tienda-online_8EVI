@@ -17,3 +17,12 @@ if(slideIndex > slides.length){
 slides[slideIndex - 1].style.display = "block";
 setTimeout(carrusel, 2000);
 }
+
+
+
+
+let boton = getElementsById("comprar");
+
+function comprar(){
+    alert("Gracias por realizar su comprar, fue un exito.")
+}

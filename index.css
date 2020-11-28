@@ -12,14 +12,15 @@
     --shaders-color:#9fa8b1;
     --logo-strong-color:black; */
     /* new colors*/
-    --header-back-color:#42413df5;
-    --black-copy-header-color:#202020dc;
+    --header-background-color:#132743;
+    --black-copy-header-color:#211222;
     --section-back-color:#a7a397;
-    --header-text-strong:#f7f5ee;
-    --main-h2-text-color:#FFCE2B;
+    --header-text-strong:#edc988;
+    --main-h2-text-color:#f8efd4;
+    --line-header-color:#67ff2b8f;
 }
 #header{
-    background-color: var(--header-back-color);
+    background-color: var(--header-background-color);
     text-align: center;
 }
 #header h1 strong{
@@ -35,7 +36,41 @@
 }
 
 
+/* header section contacto */
+.header-contacto-div{
+    display:flex;
+    justify-content: space-between;
+}
+/* logo section */
+.logo{
+    width: 170px;
+    height: auto;
+    /* border: 1px solid red; */
+    color:var(--header-text-strong);
+    
+}
 
+/* span con el numero de celular */
+.celular-text-color{
+    color:var(--header-text-strong);
+    cursor: pointer;
+}
+.celular-text-color a{
+    text-decoration: none;
+}
+/* centrando el numero de celular en el header */
+.centrar-numero{
+    display:flex;
+    align-items: center;
+}
+
+/* tamaño del icono de wsp en el header */
+.contact-icon-size-wsp{
+    max-width: 30px;
+    max-height: 30px;
+    /* margin-left: 5px; */
+    /* display: flex; */
+}
 
 
 
@@ -44,6 +79,10 @@
     /* .section-cards{
         display:flex;
     } */
+
+
+
+
 
 /* slide */
 
@@ -54,11 +93,13 @@
 }
 
 
+/* cards */
+
 .cards{
     /* cards en general */
-    display: flex;
-    overflow-y: hidden; 
-    overflow-x: auto;
+    display: block;
+    overflow-x: hidden; 
+    overflow-y: auto;
     margin:5px;
     
     
@@ -67,6 +108,7 @@
     /* separacion entre cards */
     /* cada una de las cards */
     margin: 0 5px 10px 5px;
+    border:solid 1px green;
 }
 
 .button-margin{
@@ -87,7 +129,8 @@
 
 /* -------------------contacto section */
 .contacto-body{
-    background-color: var(--section-back-color);
+    background-color: var(--header-background-color);
+    max-height: 100px;
 }
 
 
@@ -102,6 +145,7 @@
     /* display:flex; */
     /* justify-content: space-around; */
     margin: 0 auto;
+    display: flex;
     /* padding:10px; */
 }
 .contact-icon-size{
@@ -114,24 +158,19 @@
 
 .figure-display-change{
     display:flex;
-    justify-content: center;
-    margin: 15px 0 0 0;
+    color:var(--header-text-strong);
+    /* justify-content: space-between; */
+    /* margin: 15px 0 0 0; */
+}
+/* figcaption del header, justamente del #celular */
+.figcaption-change{
+    display:flex;
+    align-items: center;
+}
+.quitar-subrayado{
+    text-decoration: none !important ;
 }
 
-
-
-/*----------------- fooooooter section */
-footer div h6{
-    display:inline-block;
-    cursor: pointer;
-}
-footer span{
-    background-image: url(./img/icons/drop-down-icon.png);
-    display: flex;
-    background-size: cover;
-    width: 15px;
-    height: 15px;
-    
-}
+/*----------------- fooooooter section *
 
 
