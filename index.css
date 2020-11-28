@@ -4,6 +4,9 @@
     margin: 0;
     /* font-size: 1em; */
 }
+html body h3{
+    margin:0;
+}
 :root{
     /* --ok-color:#007bff;
     --ok-button-color:#7f9fc073;
@@ -13,9 +16,11 @@
     --logo-strong-color:black; */
     /* new colors*/
     --header-background-color:#132743;
+    --header-color-traslucido:#0e1d3191;
     --black-copy-header-color:#211222;
     --section-back-color:#a7a397;
     --header-text-strong:#edc988;
+    --header-text-strong-catego:#edca88a9;
     --main-h2-text-color:#f8efd4;
     --line-header-color:#67ff2b8f;
 }
@@ -74,58 +79,49 @@
 
 
 
-
-/* -------------------------------------------------------------------------main section */
-    /* .section-cards{
-        display:flex;
-    } */
-
-
-
-
-
-/* slide */
-
-.slide-img-items{
-    /* display: none; */
-    vertical-align: middle;
-    
-}
-
-
-/* cards */
-
-.cards{
-    /* cards en general */
-    display: block;
-    overflow-x: hidden; 
-    overflow-y: auto;
-    margin:5px;
-    
-    
-}
-.card{
-    /* separacion entre cards */
-    /* cada una de las cards */
-    margin: 0 5px 10px 5px;
-    border:solid 1px green;
-}
-
-.button-margin{
-    margin: 0 0 5px 0;
-}
-
-/* ----------------------------- setion h2 en adelante */
-.sub-tittle-color{
-    background-color: var(--black-copy-header-color);
-}
-.sub-tittle-color h2{
+/*--------------------- seccion de las categorias */
+.h2-tupper-catego{
+    text-align: center;
+    background-color: var(--header-color-traslucido);
+    color: var(--main-h2-text-color);
     margin: 0;
-    color:var(--main-h2-text-color);
 }
+.categoria-1-padre{
+    background-image: url(./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 200px;
+    background-position-y: center;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido);
+    margin:20px 0;
+    padding: 40px 0;
+    border-radius: 10px;
 
-
-
+}
+.h3-categoria{
+    color: var(--header-background-color);
+    background-color: var(--header-text-strong-catego);
+    width: 100%;
+    text-align: center;
+    /* border-radius: 5px; */
+}
+.span-border{
+    border:1px solid var(--header-background-color);
+    margin: 0 5px 5px 0;
+    border-radius: 5px;
+    
+}
+.span-border a{
+    text-decoration: none;
+}
+.span-border:hover{
+    cursor:pointer;
+   
+    background-color: var(--header-text-strong-catego);
+    color: var(--header-background-color)
+} 
 
 /* -------------------contacto section */
 .contacto-body{
