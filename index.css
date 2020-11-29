@@ -16,15 +16,63 @@ html body h3{
     --logo-strong-color:black; */
     /* new colors*/
     --header-background-color:#2d2c35;
-    --header-color-traslucido:#7f78b6;
+    --header-color-traslucido:#ff5906d0;
+    --header-color-traslucido-shadow:#2c140893;
     --black-copy-header-color:#211222;
     --section-back-color:#a7a397;
     --header-text-strong:#dfc062;
-    --header-span-text-strong:#7f78b6;
-    --header-text-strong-catego:#4b4768b0;
-    --main-h2-text-color:#f8efd4;
+    --header-span-text-strong:#ff5906 ;
+    --header-text-strong-catego:#ff59069f ;
+    --main-h2-text-color:#1b1a16 ;
     --main-h1-text-color:#f8efd4;
     --line-header-color:#67ff2b8f;
+}
+/* boton fotante de wsp */
+.btn-wsp {
+    /* padding: 5px; */
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 55px;
+    top: 380px;
+    left: 10px;
+    background-color: #0df055a2;
+    color: var(--main-h1-text-color) !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration:none;
+    
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color:#0df055a2 !important;
+    background-color: var(--main-h1-text-color)!important;
+}
+/* ----------------------------botno mensenger */
+.btn-msg {
+    /* padding: 5px; */
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    top: 320px;
+    left: 10px;
+    background-color: #eff5f1c4;
+    color:#0078ff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+}
+.btn-msg:hover{
+    text-decoration: none;
+    color:#eff5f1f8;
+    background-color: #0077ffbd;
 }
 #header{
     background-color: var(--header-background-color);
@@ -84,7 +132,7 @@ html body h3{
     /* margin-left: 5px; */
     /* display: flex; */
 }
-
+/* -----------------------------------------------------------final header */
 
 
 /*--------------------- seccion de las categorias */
@@ -93,7 +141,7 @@ html body h3{
     background-color: var(--header-color-traslucido);
     color: var(--main-h2-text-color);
     margin: 0;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 .categoria-tupper-1-padre{
     background-image: url(./img/jpegs/tarros/img-jpgs/tarro-azucar-celeste-blanco.jpg);
@@ -103,8 +151,8 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 
@@ -118,8 +166,8 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 
@@ -133,8 +181,8 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 
@@ -148,8 +196,8 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 
@@ -173,7 +221,7 @@ html body h3{
 .span-border-tupper-linea-micro:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 /* boton linea refrierar */
 .span-border-tupper-linea-refri{
@@ -188,7 +236,7 @@ html body h3{
 .span-border-tupper-linea-refri:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 /*------------------------- boton transportar */
 .span-border-tupper-linea-trans{
@@ -203,7 +251,7 @@ html body h3{
 .span-border-tupper-linea-trans:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 /*------------------------ boton conservar */
 .span-border-tupper-linea-conser{
@@ -218,10 +266,73 @@ html body h3{
 .span-border-tupper-linea-conser:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 
+/*-------------------------- section hinode contenedores de categorias */
+.h2-hinode-catego{
+    text-align: center;
+    background-color: var(--header-color-traslucido);
+    color: var(--main-h2-text-color);
+    margin: 0;
+    text-transform: uppercase;
+}
+.categoria-hinode-1-padre{
+    background-image: url(./img/jpegs/tarros/img-jpgs/tarro-azucar-celeste-blanco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 200px;
+    background-position-y: center;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow )!important;
+    margin:15px 0;
+    padding: 40px 0;
+    border-radius: 10px;
 
+}
+.categoria-hinode-2-padre{
+    background-image: url(./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 200px;
+    background-position-y: center;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow )!important;
+    margin:15px 0;
+    padding: 40px 0;
+    border-radius: 10px;
+
+}
+.categoria-hinode-3-padre{
+    background-image: url(./img/jpegs/tarros/img-jpgs/tarro-azucar-celeste-blanco.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 200px;
+    background-position-y: center;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow )!important;
+    margin:15px 0;
+    padding: 40px 0;
+    border-radius: 10px;
+
+}
+.categoria-hinode-4-padre{
+    background-image: url(./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 200px;
+    background-position-y: center;
+    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow) !important;
+    margin:15px 0;
+    padding: 40px 0;
+    border-radius: 10px;
+
+}
 /* ---------------------------------------------------section hinode botones */
 .span-border-hinode-linea-micro{
     border:1px solid var(--header-background-color);
@@ -235,7 +346,7 @@ html body h3{
 .span-border-hinode-linea-micro:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 /* boton linea refrierar */
 .span-border-hinode-linea-refri{
@@ -250,7 +361,7 @@ html body h3{
 .span-border-hinode-linea-refri:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 /*------------------------- boton transportar */
 .span-border-hinode-linea-trans{
@@ -265,7 +376,7 @@ html body h3{
 .span-border-hinode-linea-trans:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 /*------------------------ boton conservar */
 .span-border-hinode-linea-conser{
@@ -280,7 +391,7 @@ html body h3{
 .span-border-hinode-linea-conser:hover{
     cursor:pointer;
     background-color: var(--header-text-strong-catego);
-    color: var(--main-h1-text-color)
+    /* color: var(--main-h1-text-color) */
 } 
 
 
@@ -294,7 +405,7 @@ html body h3{
     height: 200px;
     background-position-y: center;
     box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 }
@@ -307,7 +418,7 @@ html body h3{
     height: 200px;
     background-position-y: center;
     box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 }
@@ -320,7 +431,7 @@ html body h3{
     height: 200px;
     background-position-y: center;
     box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 }
@@ -333,7 +444,7 @@ html body h3{
     height: 200px;
     background-position-y: center;
     box-shadow: 2px 2px 6px  var(--header-color-traslucido);
-    margin:20px 0;
+    margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 }
