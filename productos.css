@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.main-container{
+    /* display: flex;  */
+    justify-content: space-around;
+    max-width: 100%;
+}
+.card{
+    margin: 10px;
+    max-height: auto;
+}
+.card figure{
+    margin:0;
+}
+.card figure img{
+    max-width: auto;
+    max-height: 150px;
+}

@@ -15,16 +15,16 @@ html body h3{
     --shaders-color:#9fa8b1;
     --logo-strong-color:black; */
     /* new colors*/
-    --header-background-color:#2d2c35;
-    --header-color-traslucido:#ff5906d0;
-    --header-color-traslucido-shadow:#2c140893;
+    --header-background-color:#18100b;
+    --header-color-traslucido:#ff5906;
+    --header-color-traslucido-shadow:rgba(0, 0, 0, 0.2);
     --black-copy-header-color:#211222;
     --section-back-color:#a7a397;
     --header-text-strong:#dfc062;
     --header-span-text-strong:#ff5906 ;
-    --header-text-strong-catego:#ff59069f ;
-    --main-h2-text-color:#1b1a16 ;
-    --main-h1-text-color:#f8efd4;
+    --header-text-strong-catego:#ff5906 ;
+    --main-h2-text-color:#1b1a167e ;
+    --main-h1-text-color:#f8f6f0;
     --line-header-color:#67ff2b8f;
 }
 /* boton fotante de wsp */
@@ -139,7 +139,7 @@ html body h3{
 .h2-tupper-catego{
     text-align: center;
     background-color: var(--header-color-traslucido);
-    color: var(--main-h2-text-color);
+    color: var(--header-background-color);
     margin: 0;
     text-transform: uppercase;
 }
@@ -151,7 +151,7 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow);
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
@@ -166,7 +166,7 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow);
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
@@ -181,7 +181,7 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow);
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
@@ -196,19 +196,20 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow);
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow);
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
 
 }
 .h3-categoria{
-    color: var(--main-h2-text-color);
-    background-color: var(--header-text-strong-catego);
+    color: var(--main-h1-text-color);
+    background-color: var(--main-h2-text-color);
     width: 100%;
     text-align: center;
     /* border-radius: 5px; */
 }
+
 .span-border-tupper-linea-micro{
     border:1px solid var(--header-background-color);
     margin: 0 5px 5px 0;
@@ -220,8 +221,8 @@ html body h3{
 }
 .span-border-tupper-linea-micro:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 /* boton linea refrierar */
 .span-border-tupper-linea-refri{
@@ -235,8 +236,8 @@ html body h3{
 }
 .span-border-tupper-linea-refri:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 /*------------------------- boton transportar */
 .span-border-tupper-linea-trans{
@@ -250,8 +251,8 @@ html body h3{
 }
 .span-border-tupper-linea-trans:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 /*------------------------ boton conservar */
 .span-border-tupper-linea-conser{
@@ -265,15 +266,15 @@ html body h3{
 }
 .span-border-tupper-linea-conser:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 
 /*-------------------------- section hinode contenedores de categorias */
 .h2-hinode-catego{
     text-align: center;
     background-color: var(--header-color-traslucido);
-    color: var(--main-h2-text-color);
+    color: var(--header-background-color );
     margin: 0;
     text-transform: uppercase;
 }
@@ -285,7 +286,7 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow )!important;
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow )!important;
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
@@ -299,7 +300,7 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow )!important;
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow )!important;
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
@@ -313,7 +314,7 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow )!important;
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow )!important;
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
@@ -327,7 +328,7 @@ html body h3{
     width: auto;
     height: 200px;
     background-position-y: center;
-    box-shadow: 2px 2px 6px  var(--header-color-traslucido-shadow) !important;
+    box-shadow: 0 4px 8px 0  var(--header-color-traslucido-shadow) !important;
     margin:15px 0;
     padding: 40px 0;
     border-radius: 10px;
@@ -345,8 +346,8 @@ html body h3{
 }
 .span-border-hinode-linea-micro:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 /* boton linea refrierar */
 .span-border-hinode-linea-refri{
@@ -360,8 +361,8 @@ html body h3{
 }
 .span-border-hinode-linea-refri:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 /*------------------------- boton transportar */
 .span-border-hinode-linea-trans{
@@ -375,8 +376,8 @@ html body h3{
 }
 .span-border-hinode-linea-trans:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 /*------------------------ boton conservar */
 .span-border-hinode-linea-conser{
@@ -390,8 +391,8 @@ html body h3{
 }
 .span-border-hinode-linea-conser:hover{
     cursor:pointer;
-    background-color: var(--header-text-strong-catego);
-    /* color: var(--main-h1-text-color) */
+    background-color: var(--main-h2-text-color);
+    color: var(--main-h1-text-color)
 } 
 
 
