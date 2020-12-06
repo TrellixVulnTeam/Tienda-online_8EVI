@@ -11,9 +11,7 @@ html *{
     justify-content: space-around;
     max-width: 100%;
 }
-.card-span-back-color{
-    /* background-color: #1b1b24; */
-}
+
 .card{
     margin: 10px;
     max-height: auto;
