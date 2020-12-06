@@ -5,6 +5,7 @@ html *{
 }
 :root{
     --btn-color:#18100b;
+    --back-btn-color:#ff5906;
 }
 .main-container{
     /* display: flex;  */
@@ -29,9 +30,9 @@ html *{
 }
 
 .detalles-span{
-    border-radius: 10px 10px 0 0;
-    background: linear-gradient(to top, #000000e3 ,#aaa7a4ce  )!important;
-    color:#f8f6f0;
+    border-radius: 5px 5px 0 0;
+    background: linear-gradient(to bottom, #f5cab4b7 ,#f8d2c0b9  )!important;
+    color: var(--btn-color);
 }
 /* colores dentro de las cartas  */
 #card-color-blue{
@@ -59,7 +60,7 @@ html *{
     margin:5px;
 }
 .detalles-btn{
-    /* border-radius: 5px; */
+    border-radius: 5px;
     color: var(--btn-color);
     background-color: #ff5906;
     padding:  5px 3px;
