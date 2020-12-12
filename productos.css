@@ -7,6 +7,43 @@ html *{
     --btn-color:#18100b;
     --back-btn-color:#ff5906;
 }
+
+.main-container-logo{
+    display: flex;
+    justify-content: space-around;
+}
+/* ---------------------------header section menu y carrito de compras */
+.icons-container{
+/* hacer el contenedor mas grande y acomodar los iconos para que tengasn un margen y se vean bien */
+/* display: flex; */
+/* justify-content: space-around; */
+/* align-items: center; */
+
+}
+.menu{
+    color: white;
+    /* margin:20px !important; */
+    
+}
+.menu:hover{
+    cursor: pointer;
+    color:var(--back-btn-color);
+}
+.carrito{
+    color:white;
+    /* margin:20px; */
+}
+.carrito:hover{
+    cursor: pointer;
+    color:var(--back-btn-color);
+}
+
+
+
+
+
+
+
 .main-container{
     /* display: flex;  */
     justify-content: space-around;
@@ -31,7 +68,7 @@ html *{
 
 .detalles-span{
     border-radius: 5px 5px 0 0;
-    background: linear-gradient(to bottom, #f5cab4b7 ,#f8d2c0b9  )!important;
+    background: linear-gradient(to bottom, #f8f2efb7 ,#f1e9e5b9  )!important;
     color: var(--btn-color);
 }
 /* colores dentro de las cartas  */
