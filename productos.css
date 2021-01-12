@@ -54,7 +54,7 @@ html *{
 .card{
     margin: 10px;
     max-height: auto;
-    max-width: 300px;
+    max-width: 350px;
 }
 .card figure{
     margin:0;
