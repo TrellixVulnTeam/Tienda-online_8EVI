@@ -121,7 +121,7 @@ html body h3{
 }
 /* centrando el numero de celular en el header */
 .centrar-numero{
-    display:flex;
+    /* display:flex; */
     align-items: center;
 }
 

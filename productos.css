@@ -15,6 +15,9 @@ html *{
 /* ---------------------------header section menu y carrito de compras */
 .icons-container{
 /* hacer el contenedor mas grande y acomodar los iconos para que tengasn un margen y se vean bien */
+    display:flex;
+    justify-content: space-around;
+    /* align-items: center; */
 /* display: flex; */
 /* justify-content: space-around; */
 /* align-items: center; */
@@ -25,18 +28,15 @@ html *{
     /* margin:20px !important; */
     
 }
-.menu:hover{
+/* el carrito no puede tener hover ya que es una .png */
+
+/* .menu:hover,.cart-icon:hover{
     cursor: pointer;
     color:var(--back-btn-color);
-}
-.carrito{
-    color:white;
-    /* margin:20px; */
-}
-.carrito:hover{
-    cursor: pointer;
-    color:var(--back-btn-color);
-}
+
+} */
+
+
 
 
 
@@ -53,6 +53,7 @@ html *{
 .card{
     margin: 10px;
     max-height: auto;
+    max-width: 300px;
 }
 .card figure{
     margin:0;
