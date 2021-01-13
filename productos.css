@@ -9,6 +9,13 @@ html *{
     --back-btn-color:#ff5906;
 }
 
+/* header stilos en linea */
+/* style="margin: 43px  0 0 0;  text-align:bottom;" */
+.icono-menu{
+    margin:43px 0 0 0;
+    text-align: bottom;
+}
+
 .main-container-logo{
     display: flex;
     justify-content: space-around;
@@ -31,11 +38,12 @@ html *{
 }
 /* el carrito no puede tener hover ya que es una .png */
 
-/* .menu:hover,.cart-icon:hover{
-    cursor: pointer;
-    color:var(--back-btn-color);
-
-} */
+.cart-icon{
+    margin: 40px  0 0 0; 
+      
+    text-align:center; 
+    
+} 
 
 
 
@@ -49,6 +57,9 @@ html *{
     /* display: flex;  */
     justify-content: space-around;
     max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 
 .card{
