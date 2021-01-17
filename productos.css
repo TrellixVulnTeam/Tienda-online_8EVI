@@ -54,7 +54,7 @@ html *{
 
 
 .main-container{
-    display: flex; 
+    /* display: flex;  */
     justify-content: space-around;
     max-width: 100%;
     flex-wrap: wrap;
@@ -63,7 +63,7 @@ html *{
 }
 
 .card{
-    margin: 10px;
+    margin: 10px auto;
     max-height: auto;
     max-width: 300px;
 }
@@ -133,6 +133,6 @@ html *{
     .card{
         /* margin: 10px; */
         /* max-height: auto; */
-        max-width: auto;
+        /* max-width: auto; */
     }
 }
