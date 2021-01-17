@@ -54,12 +54,25 @@ html *{
 
 
 .main-container{
-    /* display: flex;  */
+    display: flex; 
     justify-content: space-around;
     max-width: 100%;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+}
+@media screen and (min-width:480px){
+
+    .main-container{
+        /* border:1px solid red !important; */
+        display: flex; 
+        /* justify-content: center; */
+        /* max-width: 500px; */
+        /* justify-content: space-around;
+        max-width: 100%;
+        align-items: center;
+        text-align: center; */
+    }
 }
 
 .card{
