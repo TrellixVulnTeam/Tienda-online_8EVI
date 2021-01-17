@@ -61,24 +61,11 @@ html *{
     align-items: center;
     text-align: center;
 }
-@media screen and (min-width:480px){
-
-    .main-container{
-        /* border:1px solid red !important; */
-        display: flex; 
-        /* justify-content: center; */
-        /* max-width: 500px; */
-        /* justify-content: space-around;
-        max-width: 100%;
-        align-items: center;
-        text-align: center; */
-    }
-}
 
 .card{
     margin: 10px;
     max-height: auto;
-    max-width: 350px;
+    max-width: 300px;
 }
 .card figure{
     margin:0;
@@ -87,10 +74,10 @@ html *{
     max-width: auto;
     max-height: 150px;
 }
-.card-detalles-main{
+/* .card-detalles-main{
     display:flex;
     
-}
+} */
 
 .detalles-span{
     border-radius: 5px 5px 0 0;
@@ -98,7 +85,7 @@ html *{
     color: var(--btn-color);
 }
 /* colores dentro de las cartas  */
-#card-color-blue{
+/* #card-color-blue{
     background-color: blue;
     border-radius: 50px;
     width: 20px;
@@ -115,13 +102,13 @@ html *{
     border-radius: 50px;
     width: 20px;
     height: 20px;
-}
-.card-color-display{
-    display: flex;
-}
-.colores-margin{
+} */
+/* .card-color-display{
+     display: flex; 
+} */
+/* .colores-margin{
     margin:5px;
-}
+} */
 .detalles-btn{
     border-radius: 5px;
     color: var(--btn-color);
@@ -129,4 +116,23 @@ html *{
     padding:  5px 3px;
     margin: 5px 0 0 0;
     width: 100%;
+}
+
+@media screen and (min-width:370px){
+
+    .main-container{
+        /* border:1px solid red !important; */
+        display: flex; 
+        /* justify-content: center; */
+        
+         /* justify-content: center; */
+        /*max-width: 100%;
+        align-items: center;
+        text-align: center; */
+    }
+    .card{
+        /* margin: 10px; */
+        /* max-height: auto; */
+        max-width: auto;
+    }
 }
