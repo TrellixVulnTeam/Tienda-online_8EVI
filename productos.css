@@ -118,7 +118,7 @@ html *{
     width: 100%;
 }
 
-@media screen and (min-width:380px){
+@media screen and (min-width:378px){
 
     .main-container{
         /* border:1px solid red !important; */
@@ -131,7 +131,7 @@ html *{
         text-align: center; */
     }
     .card{
-        /* margin: 10px; */
+        /* margin: 10px 10px; */
         /* max-height: auto; */
         /* max-width: auto; */
     }
