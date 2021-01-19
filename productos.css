@@ -89,6 +89,13 @@ html *{
     display:flex;
     justify-content: space-around;
 }
+.btn-detalles-card{
+    background-color: var(--btn-color);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+}
 
 /* colores dentro de las cartas  */
 /* #card-color-blue{
