@@ -148,4 +148,10 @@ html *{
         /* max-height: auto; */
         /* max-width: auto; */
     }
+    .btn-detalles-card{
+        margin:5px;
+    }
+    .detalles-contador{
+        margin: 5px;
+    }
 }
