@@ -63,7 +63,7 @@ html *{
 }
 
 .card{
-    margin: 5px auto;
+    margin: 10px auto;
     max-height: auto;
     max-width: 300px;
 }
