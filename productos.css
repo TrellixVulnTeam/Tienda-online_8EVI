@@ -111,6 +111,9 @@ html *{
     width: 100px;
     padding:  5px 3px;
 }
+.contador{
+    padding:  5px 3px;
+}
 
 /* colores dentro de las cartas  */
 /* #card-color-blue{
