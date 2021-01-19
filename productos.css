@@ -58,7 +58,7 @@ html *{
     /* justify-content: space-betwee; */
 }
 .categoria-name{
-    margin-left: 30px;
+    margin-left:30px;
     font-size: large;
     color: var(--btn-color);
     text-align: center;
@@ -109,6 +109,7 @@ html *{
     border-radius: 5px;
     border: none;
     width: 100px;
+    padding:  5px 3px;
 }
 
 /* colores dentro de las cartas  */
