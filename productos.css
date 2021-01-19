@@ -1,9 +1,4 @@
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-    
-    -webkit-appearance: "Always Show Up/Down Arrows";
-    
-}
+
 
 html *{
     margin: 0;
