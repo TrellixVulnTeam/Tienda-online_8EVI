@@ -51,7 +51,21 @@ html *{
 
 
 
-
+.categoria-titulo{
+    background-color: var(--back-btn-color);
+    display:flex;
+    align-items: center;
+    /* justify-content: space-betwee; */
+}
+.categoria-name{
+    margin-left: 30px;
+    font-size: large;
+    color: var(--btn-color);
+    text-align: center;
+    display: inherit;
+    justify-content: center;
+    /* border:1px solid red; */
+}
 
 .main-container{
     /* display: flex;  */
