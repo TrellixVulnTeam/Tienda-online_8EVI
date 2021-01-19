@@ -84,6 +84,12 @@ html *{
     background: linear-gradient(to bottom, #f8f2efb7 ,#f1e9e5b9  )!important;
     color: var(--btn-color);
 }
+/* estilos de la section ver mas detalles y contador */
+.detalles-contador{
+    display:flex;
+    justify-content: space-around;
+}
+
 /* colores dentro de las cartas  */
 /* #card-color-blue{
     background-color: blue;
