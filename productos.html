@@ -19,9 +19,21 @@
   <header class="w3-container main-header w3-cell-row header-background-color" id="header">
     
     <div class="icons-container">
+      <div id="" class="menu fa fa-bars fa-lg icono-menu overlay"  onclick="openNav()"></div>
       <!-- inicio del header-icnos  -->
-      <div id="icon-menu" class="menu fa fa-bars fa-lg icono-menu"  onclick="alert('hoi')"></div>
+      <div id="myNav" class="overlay">
+        <button class="closebtn" onclick="closeNav()">Cerrar</button>
+          <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">Inicio</a>
+          <a href="#">Productos</a>
+          <!-- <a href="#">Contact</a> -->
+          <!-- <a href="#">Clients</a> -->
+        </div>
+      </div>
 
+      
+<!-- final header oculto -->
       <div class="main-container-logo">
         <div class="logo">
           <h1 class="w3-pale w3-wide" id="page-name"><strong> Nora's</strong></h1>
