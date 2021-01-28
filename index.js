@@ -1,28 +1,6 @@
-// ------------------------------slideshow 
-let slideIndex = 0;
-carrusel();
-
-function carrusel (){
-let i;
-let slides = document.getElementsByClassName('slide-img-items');
-for(i = 0; i < slides.length; i++){
-    slides[i].style.display = "none";
+// al presionar el boton de ver detalles se le agrega una clase  que sera la encargada de mostrar el frente
+function mostrarDetalles(){
+    let botonDetalles = document.querySelector('.btn-detalle-card');
 }
 
-slideIndex++;
-
-if(slideIndex > slides.length){
-    slideIndex = 1;
-}
-slides[slideIndex - 1].style.display = "block";
-setTimeout(carrusel, 2000);
-}
-
-
-
-
-let boton = getElementsById("comprar");
-
-function comprar(){
-    alert("Gracias por realizar su comprar, fue un exito.")
-}
+function ocultarDestalles(){}
