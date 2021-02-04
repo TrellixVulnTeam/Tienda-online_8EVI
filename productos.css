@@ -169,6 +169,7 @@ html *{
     border: none;
     width: 100px;
     padding:  5px 3px;
+    margin: 0 0 5px 0;
 }
 .btn-detalles-card:hover{
     cursor: pointer !important;
