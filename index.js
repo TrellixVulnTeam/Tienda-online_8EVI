@@ -29,8 +29,4 @@ function openNav(){
      }
      
 }
-function closeNav(){
-     // let closeIcono = document.getElementById('myNav')
-
-          return menuIcono.style.display = "none";
-}
+let closeNav = () =>  menuIcono.style.display = "none";
