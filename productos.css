@@ -7,7 +7,8 @@ html *{
 }
 
 :root{
-    --btn-color:#18100b;
+    --btn-color: #333333;
+    --text-color:#18100b;
     --back-btn-color:#ff5906;
 }
 
@@ -62,7 +63,7 @@ html *{
     height: 100%;
     color: white;
     /* display: flex; */
-    background-color: #000000be;
+    background-color: #000000c7;
     border-radius: 10px;
     /* flex-wrap: wrap; */
     /* justify-content: space-around; */
@@ -78,8 +79,8 @@ html *{
 }
 .overlay button:hover{
     background-color: var(--back-btn-color);
-    color: var(--btn-color);
-    border: 1px solid var(--btn-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     
 }
 .overlay-content a{
@@ -119,7 +120,7 @@ html *{
 .categoria-name{
     margin-left:30px;
     font-size: large;
-    color: var(--btn-color);
+    color: var(--text-color);
     text-align: center;
     display: inherit;
     justify-content: center;
@@ -155,7 +156,7 @@ html *{
 .detalles-span{
     border-radius: 5px 5px 0 0;
     background: linear-gradient(to bottom, #f8f2efb7 ,#f1e9e5b9  )!important;
-    color: var(--btn-color);
+    color: var(--text-color);
 }
 /* estilos de la section ver mas detalles y contador */
 .detalles-contador{
@@ -163,7 +164,7 @@ html *{
     justify-content: space-around;
 }
 .btn-detalles-card{
-    background-color: var(--btn-color);
+    background-color: var(--text-color);
     color: white;
     border-radius: 5px;
     border: none;
@@ -212,7 +213,7 @@ html *{
 } */
 .detalles-btn{
     border-radius: 5px;
-    color: var(--btn-color);
+    color: var(--text-color);
     background-color: #ff5906;
     padding:  5px 3px;
     /* margin: 5px; */
