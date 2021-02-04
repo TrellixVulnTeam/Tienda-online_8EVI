@@ -59,7 +59,7 @@ html *{
     top:40px;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     color: white;
     /* display: flex; */
     background-color: #000000be;
@@ -180,6 +180,7 @@ html *{
 /* stilos texto oculto */
 .down-description-span{
     text-align: center !important;
+     word-wrap: break-word; /* impide que el texto se salga del contenedor */
 }
 
 
