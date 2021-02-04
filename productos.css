@@ -132,6 +132,12 @@ html *{
     padding:  5px 3px;
 }
 
+/* stilos texto oculto */
+.down-description-span{
+    text-align: center !important;
+}
+
+
 /* colores dentro de las cartas  */
 /* #card-color-blue{
     background-color: blue;
