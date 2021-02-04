@@ -54,7 +54,7 @@ html *{
 /* ---------------menu tipo cortna */
 .overlay{
     display:none;
-    border:1px solid red;
+    /* border:1px solid red; */
     position: absolute;
     top:40px;
     left: 0;
