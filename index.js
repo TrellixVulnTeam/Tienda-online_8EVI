@@ -16,10 +16,22 @@ function closeNav() {
   return (menuIcono.style.display = "none");
 }
 
-function agregarCarrito(html) {
-  let car = getLocalStorage("carrito");
-  if (!car) car = [];
+function agregarCarrito(html, item) {
+  console.log("item", JSON.parse(atob(item)));
 
+  let car = getLocalStorage("carrito");
+
+  if (!car) car = [];
+  else {
+    car = JSON.parse(car);
+    console.log("carrito", car);
+  }
+
+  // Comparar con el carrito actual si ya existe el producto para sumarle
+
+  const id = html.id;
+
+  // Guardo carrito agregando el producto al array del localstorage
   car.push({ [html.id]: html.value });
   saveLocalstorage("carrito", car);
   //   const obj = { id, Valor };
@@ -27,7 +39,7 @@ function agregarCarrito(html) {
 
 function saveLocalstorage(key, data) {
   console.log("guarda data", data);
-  window.localStorage.setItem(key, data);
+  window.localStorage.setItem(key, JSON.stringify(data));
 }
 
 function getLocalStorage(key) {
@@ -41,12 +53,15 @@ function addProductos(data) {
   let c = url.searchParams.get("categoria");
   console.log("categoria", c);
 
+  data = data.filter(({ categorias }) =>
+    categorias.some((element) => element === c)
+  );
+
   const nombre = "Tarro tupperware 3ml 111121212";
   //ombre: "tuperware 1", img: "https://picsum.photos/200/300", precio: "2.6", detalle:
 
   data.map((item) => {
     let html = ` <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
      <figure class="card-img">
        <img src="${item.img}" alt="" srcset="">
        <figcaption class="w3-center">${item.nombre}</figcaption>
@@ -62,13 +77,19 @@ function addProductos(data) {
          <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
          <div class="contador">
            <span>Cantidad:</span>
-           <input id="${item.nombre}" style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1" value=1 >
+           <input id="${
+             item.nombre
+           }" style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1" value=1 >
 
          </div>
        </div>
 
+
+
        <button id="dsd" class="botones " style="background-color: transparent;"
-         onclick="agregarCarrito( document.getElementById('${item.nombre}') )">
+         onclick="agregarCarrito( document.getElementById('${
+           item.nombre
+         }') , '${btoa(JSON.stringify(item))}' )">
 
          <span class="w3-btn detalles-btn">
            Agregar al carrito
@@ -87,9 +108,9 @@ function addProductos(data) {
 function isCargada() {
   //usage:
   readTextFile("./productos.json", function (text) {
-    console.log(text);
-    var data = JSON.parse(text);
-    console.log(data);
+    console.log("texttext", text);
+    const data = JSON.parse(text);
+    console.log("texttext2", data);
   });
 }
 
@@ -98,7 +119,6 @@ function readTextFile(file, callback) {
     .then((response) => response.json())
     .then((data) => {
       addProductos(data);
-      console.log("data", data);
       return data;
     })
     .catch((error) => console.log("error", error));
