@@ -16,12 +16,23 @@ function closeNav() {
   return (menuIcono.style.display = "none");
 }
 
-function agregarCarrito(html) {
-  let car = getLocalStorage("carrito");
-  if (!car) car = [];
 
+
+
+
+// -------------------------------carrito
+
+
+function agregarCarrito(html) {
+  let car = getLocalStorage("carrit");
+  
+  console.log("antes del if cart.push",car)
+  if (!car) car = [];
+  
+  console.log("antes del cart.push",car)
   car.push({ [html.id]: html.value });
   saveLocalstorage("carrito", car);
+  
   //   const obj = { id, Valor };
 }
 
@@ -32,6 +43,7 @@ function saveLocalstorage(key, data) {
 
 function getLocalStorage(key) {
   const val = window.localStorage.getItem(key);
+  console.log(val )
   return val;
 }
 
