@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="./w3.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="./productos.css" />
   <!-- problemas con zafari -->
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
@@ -15,25 +16,27 @@
   <title>Tupperware|Distribuidor autorizado</title>
 </head>
 
+
 <body>
+
   <header class="w3-container main-header w3-cell-row header-background-color" id="header">
-    
+
     <div class="icons-container">
-      <div id="openMenu" class="menu fa fa-bars fa-lg icono-menu "  onclick="openNav()"></div>
+      <div id="openMenu" class="menu fa fa-bars fa-lg icono-menu " onclick="openNav()"></div>
       <!-- inicio del header-icnos  -->
       <div id="myNav" class="overlay">
         <button class="closebtn" id="closeMenu" onclick="closeNav()">Cerrar</button>
-          <!-- Overlay content -->
+        <!-- Overlay content -->
         <div class="overlay-content">
           <a href="#">Inicio</a>
           <a href="#">Productos</a>
-          <a href="#">Preguntas frecuentes</a> 
-         <!-- <a href="#"></a>  -->
+          <a href="#">Preguntas frecuentes</a>
+          <!-- <a href="#"></a>  -->
         </div>
       </div>
 
-      
-<!-- final header oculto -->
+
+      <!-- final header oculto -->
       <div class="main-container-logo">
         <div class="logo">
           <h1 class="w3-pale w3-wide" id="page-name"><strong> Nora's</strong></h1>
@@ -41,9 +44,9 @@
         </div>
       </div>
 
-      <div id="icon-carrito"  class="cart-icon" onclick="alert('hoi')">
-        <img  src="./img/icons/cart.png" alt="shopping-cart" srcset=""> 
-        
+      <div id="icon-carrito" class="cart-icon" onclick="alert('hoi')">
+        <img src="./img/icons/cart.png" alt="shopping-cart" srcset="">
+
       </div>
     </div>
     <!-- final header-iconos -->
@@ -62,105 +65,76 @@
     </div>
 
   </header>
-<!-- div contenedor del boton para regresar -->
-<div class="categoria-titulo">
-  
-    <button onclick="window.history.back();" style="background-color: #18100b7c;  color:white; border: none; width: 65px; height: 40px; display:flex; align-items: center; justify-content: space-around; "><i class="fas fa-arrow-circle-left"></i>Volver</button>
-  
-  <div class="categoria-name"><strong>LINEA TANSPORTAR</strong>
+  <!-- div contenedor del boton para regresar -->
+  <div class="categoria-titulo">
+
+    <button onclick="window.history.back();"
+      style="background-color: #18100b7c;  color:white; border: none; width: 65px; height: 40px; display:flex; align-items: center; justify-content: space-around; "><i
+        class="fas fa-arrow-circle-left"></i>Volver</button>
+
+    <div class="categoria-name"><strong>LINEA TANSPORTAR</strong>
+    </div>
   </div>
-</div>
   <section id="grid-section">
-    
-
- <!-- contenedor tarjetas -->
-
-    <div class="main-container" >
-
-      <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
 
 
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
+    <!-- contenedor tarjetas -->
 
-              </div>
-            </div>
-        </div>
+    <div class="main-container" id=container-productos>
 
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-          <figure class="card-img">
-           <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-            <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-          </figure>
-           <!-- seccion trasera de la tarjta -->
-          <div id="down" class="down-descript" >
-            <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-             Fugiat distinctio, dolores esse ipsa recusandae </span>
-          </div>
-
-
-          <div class="back-black-container detalles-span">
-            <div class="detalles-contador">
-              <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-              <div class="contador">
-                <span>Cantidad:</span>
-                <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                
-              </div>
-            </div>
-            
-            <div class="botones " style="background-color: transparent;">
-              
-              <span class="w3-btn detalles-btn">
-                Agregar al carrito
-                <i id="carrito-icon-btn"></i>
-              </span>
-
-            </div>
-          </div>
-      </div>
-      
       <!-- card -------------------------- separation -->
 
       <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
 
         <figure class="card-img">
-         <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
           <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
         </figure>
-         <!-- seccion trasera de la tarjta -->
-        <div id="down" class="down-descript" >
-          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-           Fugiat distinctio, dolores esse ipsa recusandae </span>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input id="coco" style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <button id="dsd" class="botones " style="background-color: transparent;"
+            onclick="agregarCarrito( document.getElementById('coco').id,document.getElementById('coco').value )">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </button>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
         </div>
 
 
@@ -170,12 +144,12 @@
             <div class="contador">
               <span>Cantidad:</span>
               <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-              
+
             </div>
           </div>
-          
+
           <div class="botones " style="background-color: transparent;">
-            
+
             <span class="w3-btn detalles-btn">
               Agregar al carrito
               <i id="carrito-icon-btn"></i>
@@ -183,1064 +157,22 @@
 
           </div>
         </div>
-    </div>
-    
-    <!-- card -------------------------- separation -->
-
-    <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-      <figure class="card-img">
-       <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-        <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-      </figure>
-       <!-- seccion trasera de la tarjta -->
-      <div id="down" class="down-descript" >
-        <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-         Fugiat distinctio, dolores esse ipsa recusandae </span>
       </div>
 
-
-      <div class="back-black-container detalles-span">
-        <div class="detalles-contador">
-          <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-          <div class="contador">
-            <span>Cantidad:</span>
-            <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-            
-          </div>
-        </div>
-        
-        <div class="botones " style="background-color: transparent;">
-          
-          <span class="w3-btn detalles-btn">
-            Agregar al carrito
-            <i id="carrito-icon-btn"></i>
-          </span>
-
-        </div>
-      </div>
-  </div>
-  
-  <!-- card -------------------------- separation -->
-
-  <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-    <figure class="card-img">
-     <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-      <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-    </figure>
-     <!-- seccion trasera de la tarjta -->
-    <div id="down" class="down-descript" >
-      <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-       Fugiat distinctio, dolores esse ipsa recusandae </span>
-    </div>
-
-
-    <div class="back-black-container detalles-span">
-      <div class="detalles-contador">
-        <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-        <div class="contador">
-          <span>Cantidad:</span>
-          <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-          
-        </div>
-      </div>
-      
-      <div class="botones " style="background-color: transparent;">
-        
-        <span class="w3-btn detalles-btn">
-          Agregar al carrito
-          <i id="carrito-icon-btn"></i>
-        </span>
-
-      </div>
-    </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-<div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-  <figure class="card-img">
-   <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-    <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-  </figure>
-   <!-- seccion trasera de la tarjta -->
-  <div id="down" class="down-descript" >
-    <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-     Fugiat distinctio, dolores esse ipsa recusandae </span>
-  </div>
-
-
-  <div class="back-black-container detalles-span">
-    <div class="detalles-contador">
-      <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-      <div class="contador">
-        <span>Cantidad:</span>
-        <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-        
-      </div>
-    </div>
-    
-    <div class="botones " style="background-color: transparent;">
-      
-      <span class="w3-btn detalles-btn">
-        Agregar al carrito
-        <i id="carrito-icon-btn"></i>
-      </span>
-
-    </div>
-  </div>
-</div>
-
-<!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-          <figure class="card-img">
-           <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-            <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-          </figure>
-           <!-- seccion trasera de la tarjta -->
-          <div id="down" class="down-descript" >
-            <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-             Fugiat distinctio, dolores esse ipsa recusandae </span>
-          </div>
-
-
-          <div class="back-black-container detalles-span">
-            <div class="detalles-contador">
-              <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-              <div class="contador">
-                <span>Cantidad:</span>
-                <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                
-              </div>
-            </div>
-            
-            <div class="botones " style="background-color: transparent;">
-              
-              <span class="w3-btn detalles-btn">
-                Agregar al carrito
-                <i id="carrito-icon-btn"></i>
-              </span>
-
-            </div>
-          </div>
-      </div>
-      
-      <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
-
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
-        </div>
-        
-        <!-- card -------------------------- separation -->
-
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-          <figure class="card-img">
-           <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-            <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-          </figure>
-           <!-- seccion trasera de la tarjta -->
-          <div id="down" class="down-descript" >
-            <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-             Fugiat distinctio, dolores esse ipsa recusandae </span>
-          </div>
-
-
-          <div class="back-black-container detalles-span">
-            <div class="detalles-contador">
-              <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-              <div class="contador">
-                <span>Cantidad:</span>
-                <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                
-              </div>
-            </div>
-            
-            <div class="botones " style="background-color: transparent;">
-              
-              <span class="w3-btn detalles-btn">
-                Agregar al carrito
-                <i id="carrito-icon-btn"></i>
-              </span>
-
-            </div>
-          </div>
-      </div>
-      
       <!-- card -------------------------- separation -->
 
       <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
 
         <figure class="card-img">
-         <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
           <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
         </figure>
-         <!-- seccion trasera de la tarjta -->
-        <div id="down" class="down-descript" >
-          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-           Fugiat distinctio, dolores esse ipsa recusandae </span>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
         </div>
 
 
@@ -1250,12 +182,12 @@
             <div class="contador">
               <span>Cantidad:</span>
               <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-              
+
             </div>
           </div>
-          
+
           <div class="botones " style="background-color: transparent;">
-            
+
             <span class="w3-btn detalles-btn">
               Agregar al carrito
               <i id="carrito-icon-btn"></i>
@@ -1263,160 +195,1308 @@
 
           </div>
         </div>
-    </div>
-    
-    <!-- card -------------------------- separation -->
-
-    <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
-
-      <figure class="card-img">
-       <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-        <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-      </figure>
-       <!-- seccion trasera de la tarjta -->
-      <div id="down" class="down-descript" >
-        <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-         Fugiat distinctio, dolores esse ipsa recusandae </span>
       </div>
 
+      <!-- card -------------------------- separation -->
 
-      <div class="back-black-container detalles-span">
-        <div class="detalles-contador">
-          <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-          <div class="contador">
-            <span>Cantidad:</span>
-            <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-            
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
           </div>
         </div>
-        
-        <div class="botones " style="background-color: transparent;">
-          
-          <span class="w3-btn detalles-btn">
-            Agregar al carrito
-            <i id="carrito-icon-btn"></i>
-          </span>
+      </div>
 
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
         </div>
       </div>
-  </div>
-  
-  <!-- card -------------------------- separation -->
 
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+      <!-- card -------------------------- separation -->
 
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
 
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
         </div>
-        
-        <!-- card -------------------------- separation -->
 
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
 
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
             </div>
+          </div>
 
+          <div class="botones " style="background-color: transparent;">
 
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
 
-              </div>
-            </div>
+          </div>
         </div>
-        
-        <!-- card -------------------------- separation -->
+      </div>
 
-        <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+      <!-- card -------------------------- separation -->
 
-            <figure class="card-img">
-             <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
-              <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
-            </figure>
-             <!-- seccion trasera de la tarjta -->
-            <div id="down" class="down-descript" >
-              <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in tenetur fugiat commodi optio consequuntur laudantium!
-               Fugiat distinctio, dolores esse ipsa recusandae </span>
-            </div>
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
 
-
-            <div class="back-black-container detalles-span">
-              <div class="detalles-contador">
-                <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
-                <div class="contador">
-                  <span>Cantidad:</span>
-                  <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
-                  
-                </div>
-              </div>
-              
-              <div class="botones " style="background-color: transparent;">
-                
-                <span class="w3-btn detalles-btn">
-                  Agregar al carrito
-                  <i id="carrito-icon-btn"></i>
-                </span>
-
-              </div>
-            </div>
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
         </div>
-        
-        
-      
-      
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- card -------------------------- separation -->
+
+      <div class="card w3-card card-detalles-main  " style="border-radius:5px;">
+
+        <figure class="card-img">
+          <img src="./img/jpegs/tarros/img-jpgs/tarro-calaveras-colores.jpg" alt="" srcset="">
+          <figcaption class="w3-center">Tarro tupperware 3ml</figcaption>
+        </figure>
+        <!-- seccion trasera de la tarjta -->
+        <div id="down" class="down-descript">
+          <span class="down-description-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quam sint
+            eos accusantium cumque nobis exercitationem quae officia repellat? Aliquam vel exercitationem incidunt in
+            tenetur fugiat commodi optio consequuntur laudantium!
+            Fugiat distinctio, dolores esse ipsa recusandae </span>
+        </div>
+
+
+        <div class="back-black-container detalles-span">
+          <div class="detalles-contador">
+            <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+            <div class="contador">
+              <span>Cantidad:</span>
+              <input style="max-width: 50px; text-align: center;" placeholder="0" type="number" min="1">
+
+            </div>
+          </div>
+
+          <div class="botones " style="background-color: transparent;">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
 
     </div> <!-- final del main container(contenedor de todas las cartas)-->
 
     <!-- final de la seccion cartas de los productos -->
-</section>
+  </section>
 
 
 
@@ -1428,12 +1508,15 @@
 
   <script src="./index.js"></script>
   <script src="./w3.js"></script>
-  
+
 
 </body>
+
+<script>
+  isCargada()
+</script>
 
 </html>
 
 
 <!-- Todos los derechos reservados 2020 © -->
-
