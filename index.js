@@ -1,3 +1,20 @@
+// logica del icono de menu
+let menuIcono = document.getElementById('myNav');
+
+function openNav(){
+     // console.log('si est oy llegadno1')
+     if(menuIcono.style.display === "none")
+     {
+          // console.log('si estoy llegadno2')
+         return menuIcono.style.display = "block" 
+     } else {
+          closeNav();
+     }
+     
+}
+let closeNav = () =>  menuIcono.style.display = "none";
+
+
 // muestra los detalles de cada card
 function showDeta(){
      let boton = document.getElementById('down')
@@ -15,18 +32,3 @@ function showDeta(){
 
 
 
-// logica del icono de menu
-let menuIcono = document.getElementById('myNav');
-
-function openNav(){
-     // console.log('si est oy llegadno1')
-     if(menuIcono.style.display === "none")
-     {
-          // console.log('si estoy llegadno2')
-         return menuIcono.style.display = "block" 
-     } else {
-          closeNav();
-     }
-     
-}
-let closeNav = () =>  menuIcono.style.display = "none";
