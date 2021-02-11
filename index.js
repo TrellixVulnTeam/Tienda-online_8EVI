@@ -16,8 +16,17 @@ function closeNav() {
   return (menuIcono.style.display = "none");
 }
 
-function agregarCarrito(html, item) {
-  console.log("item", JSON.parse(atob(item)));
+
+
+
+function agregarCarrito(cantidad, item) {
+ 
+
+  let item2 = JSON.parse(atob(item));
+  item2.numeroProductos = cantidad;
+  
+  item2.precio = (cantidad * item2.precio)
+  console.log("item2 depues", item2)
 
   let car = getLocalStorage("carrito");
 
@@ -26,17 +35,48 @@ function agregarCarrito(html, item) {
     car = JSON.parse(car);
     console.log("carrito", car);
   }
-
   // Comparar con el carrito actual si ya existe el producto para sumarle
 
-  const id = html.id;
+  const id = item2.nombre;
+  let car2 = []; 
+  let existe = car.some((element) => (element.nombre === id))
+  console.log("existe", existe)
+  if(!existe){
+    car.push(item2)
+  }
+  
+    let totalCarrito = 0;
+    // recore el carrito
+     car2 = car.map(element => {
+      console.log("carforecah",element) 
+      if(element.nombre === id){
+        totalCarrito += item2.precio 
+        return item2;
+      }
+      totalCarrito += element.precio 
+       return element
 
+    })
+ 
+    console.log("car2", totalCarrito)
+   
+
+
+  
+// verificar si el carrrrito esta vacio para e texto del boton wsp
   // Guardo carrito agregando el producto al array del localstorage
-  car.push({ [html.id]: html.value });
-  saveLocalstorage("carrito", car);
+  // car.push(item2);
+ 
+  saveLocalstorage("carrito", car2);
+  saveLocalstorage("totalcarrito", totalCarrito);
   
   //   const obj = { id, Valor };
+
 }
+
+
+
+// ---------------------guardando en local
 
 function saveLocalstorage(key, data) {
   console.log("guarda data", data);
@@ -91,7 +131,7 @@ function addProductos(data) {
        <button id="dsd" class="botones " style="background-color: transparent;"
          onclick="agregarCarrito( document.getElementById('${
            item.nombre
-         }') , '${btoa(JSON.stringify(item))}' )">
+         }').value , '${btoa(JSON.stringify(item))}' )">
 
          <span class="w3-btn detalles-btn">
            Agregar al carrito
@@ -120,8 +160,9 @@ function readTextFile(file, callback) {
   fetch("./productos.json")
     .then((response) => response.json())
     .then((data) => {
+      console.log("fetch",data)
       addProductos(data);
       return data;
     })
-    .catch((error) => console.log("error", error));
+    .catch((error) => console.log("error del fetch", error));
 }

@@ -5,6 +5,7 @@
         "precio":"2.6",
         "detalle":"Este es el detalle",
         "categorias":["transportar","microndas"]
+        
     },
     {
         "nombre":"tuperware 2",
