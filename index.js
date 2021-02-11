@@ -45,8 +45,6 @@ function closeNav() {
   return (menuIcono.style.display = "none");
 }
 
-<<<<<<< HEAD
-=======
 function agregarCarrito(html) {
   let car = getLocalStorage("carrito");
   if (!car) car = [];
@@ -117,4 +115,3 @@ function isCargada() {
 
   addProductos();
 }
->>>>>>> f5a17210c7702b5f27ad96001eb1d65906a16ed8
