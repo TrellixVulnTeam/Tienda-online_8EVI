@@ -116,7 +116,21 @@ function addProductos(data) {
 
      <div class="back-black-container detalles-span">
        <div class="detalles-contador">
-         <button id="mostrar-detalles" class="btn-detalles-card" onclick="showDeta()">Ver detalles</button>
+    
+            <button id="dsd" class="botones" 
+            
+            style="background-color: transparent; border:none;"
+
+            onclick="agregarCarrito( document.getElementById('${
+              item.nombre
+            }').value , '${btoa(JSON.stringify(item))}' )">
+
+            <span class="w3-btn detalles-btn">
+              Agregar al carrito
+              <i id="carrito-icon-btn"></i>
+            </span>
+          </button>  
+
          <div class="contador">
            <span>Cantidad:</span>
            <input id="${
@@ -128,17 +142,7 @@ function addProductos(data) {
 
 
 
-       <button id="dsd" class="botones " style="background-color: transparent;"
-         onclick="agregarCarrito( document.getElementById('${
-           item.nombre
-         }').value , '${btoa(JSON.stringify(item))}' )">
-
-         <span class="w3-btn detalles-btn">
-           Agregar al carrito
-           <i id="carrito-icon-btn"></i>
-         </span>
-
-       </button>
+       
      </div>
    </div>
    `;
