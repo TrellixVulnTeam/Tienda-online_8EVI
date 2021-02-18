@@ -68,7 +68,7 @@ function agregarCarrito(cantidad, item) {
   // car.push(item2);
  
   saveLocalstorage("carrito", car2);
-  saveLocalstorage("totalcarrito", totalCarrito);
+  saveLocalstorage("totalmplecarrito", totalCarrito);
   
   //   const obj = { id, Valor };
 

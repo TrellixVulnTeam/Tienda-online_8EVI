@@ -41,7 +41,7 @@
   <header class="w3-container main-header w3-cell-row header-background-color" id="header">
 
     <div class="icons-container">
-      <div id="openMenu" class="menu fa fa-bars fa-lg icono-menu " onclick="openNav()"></div>
+      <div id="openMenu" class="menu fa fa-bars fa-lg icono-menu" onclick="openNav()"></div>
       <!-- inicio del header-icnos  -->
       <div id="myNav" class="overlay">
         <button class="closebtn" id="closeMenu" onclick="closeNav()">Cerrar</button>
@@ -63,7 +63,8 @@
         </div>
       </div>
 
-      <div id="icon-carrito" class="cart-icon" onclick="" style="border: 1px solid red;">
+      <div id="icon-carrito" class="cart-icon" onclick="abrirModal()" style="">
+        <span class="carrito-cantidad w3-round-large w3-center">2</span>
         <a href="./carrito.html"><img src="./img/icons/cart.png" alt="shopping-cart" srcset=""></a>
 
       </div>
@@ -85,13 +86,13 @@
 
   </header>
   <!-- div contenedor del boton para regresar -->
-  <div class="categoria-titulo">
+  <div class="categoria-titulo w3-center">
 
     <button onclick="window.history.back();"
       style="background-color: #18100b7c;  color:white; border: none; width: 65px; height: 40px; display:flex; align-items: center; justify-content: space-around; "><i
         class="fas fa-arrow-circle-left"></i>Volver</button>
 
-    <div class="categoria-name"><strong>LINEA TANSPORTAR</strong>
+    <div class="categoria-name w3-center"><strong>LINEA TANSPORTAR</strong>
     </div>
   </div>
   <section id="grid-section">

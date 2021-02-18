@@ -14,14 +14,14 @@ html *{
 
 /* dandole margin al nombre del produto */
 
-.main-container .card  .card-img figcaption{
+.main-container .card .card-img figcaption{
     margin: 5px;
     font-weight: 600;
 }
 
 
 
-/* header stilos en linea */
+/*  stilos en linea */
 /* style="margin: 43px  0 0 0;  text-align:bottom;" */
 .icono-menu{
     margin:43px 0 0 0;
@@ -37,12 +37,15 @@ html *{
 /* hacer el contenedor mas grande y acomodar los iconos para que tengasn un margen y se vean bien */
     display:flex;
     justify-content: space-around;
+    /* position:fixed; */
+
     /* align-items: center; */
 /* display: flex; */
 /* justify-content: space-around; */
 /* align-items: center; */
 
 }
+
 .menu{
     color: white;
     /* margin:20px !important; */
@@ -100,11 +103,18 @@ html *{
 
 .cart-icon{
     margin: 40px  0 0 0; 
-      
     text-align:center; 
     
+    /* position: fixed; */
 } 
-
+.carrito-cantidad{
+    background: var(--back-btn-color);
+    /* border-radius: 10px; */
+    padding:1px;
+    
+    max-width: 20px;
+    max-height: 20px;
+}
 
 
 
@@ -114,16 +124,17 @@ html *{
 .categoria-titulo{
     background-color: var(--back-btn-color);
     display:flex;
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: space-betwee; */
 }
 .categoria-name{
-    margin-left:30px;
+    /* margin-left:30px; */
+    margin: auto;
     font-size: large;
     color: var(--text-color);
-    text-align: center;
-    display: inherit;
-    justify-content: center;
+    /* text-align: center; */
+    /* display: inherit;
+    justify-content: center; */
     /* border:1px solid red; */
 }
 
