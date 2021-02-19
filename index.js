@@ -27,6 +27,9 @@ function agregarCarrito(cantidad, item) {
   
   item2.precio = (cantidad * item2.precio)
   console.log("item2 depues", item2)
+    
+ 
+
 
   let car = getLocalStorage("carrito");
 
@@ -60,7 +63,12 @@ function agregarCarrito(cantidad, item) {
  
     console.log("car2", totalCarrito)
    
-
+    //imprime el ottal de items en el carrito dentro del div naranja del icono cart
+    if(car.length == 0){
+    document.querySelector(".carrito-cantidad").innerHTML = parseInt(car.length);
+    } else {
+      document.querySelector(".carrito-cantidad").innerHTML = parseInt(car.length + 1);
+    }
 
   
 // verificar si el carrrrito esta vacio para e texto del boton wsp
@@ -168,5 +176,5 @@ function readTextFile(file, callback) {
       addProductos(data);
       return data;
     })
-    .catch((error) => console.log("error del fetch", error));
+    .catch((error) => console.log("error del fetch readTextFile", error));
 }
